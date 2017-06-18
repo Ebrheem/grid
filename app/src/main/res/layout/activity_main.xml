@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.bills.grid.MainActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewTransfer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/gridTemplate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/gridBill_Header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="100.0dip"
+                    android:numColumns="1"
+                    android:stretchMode="spacingWidth"
+                    android:verticalSpacing="0.0dip" />
+
+                <GridView
+                    android:id="@+id/gridBill"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:horizontalSpacing="100.0dip"
+                    android:numColumns="1"
+                    android:stretchMode="spacingWidth"
+                    android:verticalSpacing="0.0dip" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
